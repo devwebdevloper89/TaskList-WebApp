@@ -119,6 +119,7 @@ body {
   border-radius: 30px;
   padding-left: 20px;
   margin-bottom: 25px;
+  white-space: nowrap;
 }
 input {
   flex: 1;
@@ -185,3 +186,27 @@ ul li span {
 ul li span:hover {
   background: #002765;
 }
+@media screen and (max-width: 350px) {
+  .wrapper {
+    background-size: cover;
+  }
+  .todo-app {
+    min-width: 320px;
+    padding: 25px 10px;
+  }
+  .row {
+    transform: scale(1);
+  }
+  button {
+    transform: scale(0.6);
+  }
+  ul li {
+    font-size: 15px;
+    min-height: auto;
+    text-wrap: balance;
+  }
+  ul li span {
+    font-size: auto;
+  }
+}
+
