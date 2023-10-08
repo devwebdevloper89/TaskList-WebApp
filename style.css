@@ -236,3 +236,13 @@ ul li span:hover {
     font-size: auto;
   }
 }
+@media (max-width: 768px) {
+  .wrapper {
+    top: 0;
+    background-size: cover;
+  }
+  button {
+    padding: 30px;
+    transform: scale(0.8);
+  }
+}
